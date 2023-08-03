@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.tsx", "pages/_document.tsx","pages/_app.tsxjs", "components/App.js", "components/DrawingPanel.js", "components/Editor.js"],
   "exclude": ["node_modules"]
 }
