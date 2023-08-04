@@ -15,4 +15,7 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: [
+    'hover:bg-[blue]'
+  ]
 }

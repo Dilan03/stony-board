@@ -22,7 +22,7 @@ export default function DrawingPanel(props: DrawingPanelProps) {
   }
   
   return (
-    <div id="drawingPanel">
+    <div id="drawingPanel" >
       <div id="pixels" ref={panelRef}>
         {rows}
       </div>

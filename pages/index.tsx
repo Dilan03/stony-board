@@ -28,7 +28,6 @@ export default function Home() {
 
 // import { useDraw } from '../hooks/useDraw'
 // import { FC } from 'react'
-// import DrawingPanel from '@/components/DrawingPanel'
 
 // interface pageProps {}
 
@@ -39,7 +38,7 @@ export default function Home() {
 //   function drawLine({ctx, currentPoint, prevPoint}:Draw) {
 //     const {x: currX, y: currY} = currentPoint
 //     const lineColor = '#000'
-//     const lineWidth = 100
+//     const lineWidth = 5
 
 //     let startPoint = prevPoint ?? currentPoint
 //     ctx.beginPath()
@@ -51,7 +50,7 @@ export default function Home() {
 
 //     ctx.fillStyle = lineColor
 //     ctx.beginPath()
-//     ctx.arc(startPoint.x, startPoint.y, 100, 0, Math.PI/2)
+//     ctx.arc(startPoint.x, startPoint.y, 2, 0, 2 * Math.PI)
 //     ctx.fill()
 //   }
 
@@ -64,6 +63,15 @@ export default function Home() {
 //       height={750}
 //       className='border border-black rounded-md'
 //       />
+      
+//       <div className='w-[200px] h-[80px] group shadow-[-20px_0_0_0_black,20px_0_0_0_black,0_-10px_0_0_white,0_10px_0_0_white] mx-auto my-[2em]'>
+//         <div className='relative -top-[42px] w-[200px] h-[100px] shadow-[-10px_0_0_0_black,10px_0_0_0_black,0_-10px_0_0_black,0_10px_0_0_black] mx-auto my-[2em] group-hover:bg-[blue]'>
+//           <div className='w-[221px] h-[80px] bg-[white] absolute left-[-10px] top-[10px]  group-hover:bg-[blue]'>
+
+//           </div>
+//         </div>
+//       </div>
+
 //     </div>
 //   )
 // }
