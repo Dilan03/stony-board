@@ -1,8 +1,9 @@
 import React, { Fragment , useState } from "react";
 import { CirclePicker } from "react-color";
-
-import dynamic from "next/dynamic";
-const DrawingPanel = dynamic(() => import("../components/DrawingPanel"), { ssr: false })
+//import dynamic from "next/dynamic";
+import OuterPanel from "../components/Containers/OuterPanel";
+import InnerPlanel from "../components/Containers/InnerPanel";
+//const DrawingPanel = dynamic(() => import("../components/Drawing/DrawingPanel"), { ssr: false })
 
 
 export default function Home() {
@@ -15,13 +16,16 @@ export default function Home() {
 
   return (
     <Fragment>
-      <h1>The home Page</h1>
-      <CirclePicker color={selectedColor} onChangeComplete={changeColor} />
-      <DrawingPanel
-        width={16}
-        height={16}
-        selectedColor={selectedColor}
-      />
+      <OuterPanel className={"w-[400px] h-[400px] bg-gray-1"}>
+        <div className="w-[50px] h-[50px] bg-white top-[50px] border-[4px] border-solid border-black shadow-[-4px_0_0_0_rgb(64,62,57),4px_0_0_0_rgb(229,222,207),0_-4px_0_0_rgb(64,62,57),0_4px_0_0_rgb(229,222,207)]">
+
+        </div>
+      </OuterPanel>
+      {/* <div className=" p-[10px] w-[400px] h-[400px] bg-gray-1 border-[4px] border-solid border-white shadow-[-4px_0_0_0_black,4px_0_0_0_black,0_-4px_0_0_black,0_4px_0_0_black]">
+        <div className="w-[50px] h-[50px] bg-white top-[50px] border-[4px] border-solid border-black shadow-[-4px_0_0_0_rgb(64,62,57),4px_0_0_0_rgb(229,222,207),0_-4px_0_0_rgb(64,62,57),0_4px_0_0_rgb(229,222,207)]">
+
+        </div>
+      </div> */}
     </Fragment>
   );
 }
