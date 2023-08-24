@@ -13,12 +13,18 @@ export default function Home() {
   function changeColor(color: any) {
     setColor(color.hex);
   }
-
   return (
     <Fragment>
-      <OuterPanel className={"w-[400px] h-[400px] bg-gray-1"}>
-        <div className="w-[50px] h-[50px] bg-white top-[50px] border-[4px] border-solid border-black shadow-[-4px_0_0_0_rgb(64,62,57),4px_0_0_0_rgb(229,222,207),0_-4px_0_0_rgb(64,62,57),0_4px_0_0_rgb(229,222,207)]">
+      <OuterPanel className={"w-[250px] h-[90vh] bg-gray-1"}>
+        <InnerPlanel className={"w-[100px] h-[100px] bg-white mx-auto my-0 mt-[50px]"}>
 
+        </InnerPlanel>
+        <h2 className="text-black mt-[10px]">Welcome user</h2>
+        <div className="flex flex-col mt-[100px]">
+          <ul>
+            <li><a>My pixelarts</a></li>
+            <li><a>Settings</a></li>
+          </ul>
         </div>
       </OuterPanel>
       {/* <div className=" p-[10px] w-[400px] h-[400px] bg-gray-1 border-[4px] border-solid border-white shadow-[-4px_0_0_0_black,4px_0_0_0_black,0_-4px_0_0_black,0_4px_0_0_black]">
@@ -68,13 +74,13 @@ export default function Home() {
 //       className='border border-black rounded-md'
 //       />
       
-//       <div className='w-[200px] h-[80px] group shadow-[-20px_0_0_0_black,20px_0_0_0_black,0_-10px_0_0_white,0_10px_0_0_white] mx-auto my-[2em]'>
-//         <div className='relative -top-[42px] w-[200px] h-[100px] shadow-[-10px_0_0_0_black,10px_0_0_0_black,0_-10px_0_0_black,0_10px_0_0_black] mx-auto my-[2em] group-hover:bg-[blue]'>
-//           <div className='w-[221px] h-[80px] bg-[white] absolute left-[-10px] top-[10px]  group-hover:bg-[blue]'>
+      // <div className='w-[200px] h-[80px] group shadow-[-20px_0_0_0_black,20px_0_0_0_black,0_-10px_0_0_white,0_10px_0_0_white] mx-auto my-[2em]'>
+      //   <div className='relative -top-[42px] w-[200px] h-[100px] shadow-[-10px_0_0_0_black,10px_0_0_0_black,0_-10px_0_0_black,0_10px_0_0_black] mx-auto my-[2em] group-hover:bg-[blue]'>
+      //     <div className='w-[221px] h-[80px] bg-[white] absolute left-[-10px] top-[10px]  group-hover:bg-[blue]'>
 
-//           </div>
-//         </div>
-//       </div>
+      //     </div>
+      //   </div>
+      // </div>
 
 //     </div>
 //   )
